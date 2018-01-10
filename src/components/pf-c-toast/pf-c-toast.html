@@ -1,0 +1,96 @@
+<!--
+  Each template tag represents an individual state that the component can
+  be in. If you would like to show multiple states in the work area, you should
+  have multiple template tags. To communicate information about the state that
+  the template represents, use the data-title and data-description attributes.
+  These attributes will be rendered in the workspace.
+-->
+<template data-title="pf-c-toast" data-description="">
+  <div class="pf-c-toast">
+    <div class="pf-c-toast__icon">
+      I
+    </div>
+    <div class="pf-c-toast__message">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <div class="pf-c-toast__action">
+      <a href="#0">Do this</a>
+    </div>
+    <div class="pf-c-toast__close">
+      <a href="#0">
+        X
+      </a>
+    </div>
+  </div>
+</template>
+
+<template data-title="pf-c-toast--success" data-description="Success toast">
+  <div class="pf-c-toast pf-c-toast--success">
+    <div class="pf-c-toast__icon pf-c-toast__icon--success">
+      ^
+    </div>
+    <div class="pf-c-toast__message">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <div class="pf-c-toast__action">
+      <a href="#0">Do this</a>
+    </div>
+    <div class="pf-c-toast__close">
+      <a href="#0">
+        X
+      </a>
+    </div>
+  </div>
+</template>
+
+<template data-title="pf-c-toast--warning" data-description="Warning toast">
+  <div class="pf-c-toast pf-c-toast--warning">
+    <div class="pf-c-toast__icon pf-c-toast__icon--warning">
+      !
+    </div>
+    <div class="pf-c-toast__message">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <div class="pf-c-toast__action">
+      <a href="#0">Do this</a>
+    </div>
+    <div class="pf-c-toast__close">
+      <a href="#0">
+        X
+      </a>
+    </div>
+  </div>
+</template>
+
+<template data-title="pf-c-toast--danger" data-description="Danger toast">
+  <div class="pf-c-toast pf-c-toast--danger">
+    <div class="pf-c-toast__icon pf-c-toast__icon--danger">
+      :-O
+    </div>
+    <div class="pf-c-toast__message">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <div class="pf-c-toast__action">
+      <a href="#0">Do this</a>
+    </div>
+    <div class="pf-c-toast__close">
+      <a href="#0">
+        X
+      </a>
+    </div>
+  </div>
+</template>
+
+<template data-title="pf-c-toast" data-description="Not dismissable">
+  <div class="pf-c-toast">
+    <div class="pf-c-toast__icon">
+      I
+    </div>
+    <div class="pf-c-toast__message">
+      For toast without a close mechanism, just don't put a closer there and everything stretches just fine.
+    </div>
+    <div class="pf-c-toast__action">
+      <a href="#0">Do this</a>
+    </div>
+  </div>
+</template>

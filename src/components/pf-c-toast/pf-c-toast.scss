@@ -1,0 +1,62 @@
+// pf-c-block__element--modifier--state--PropertyCamel
+$pf-c-toast__icon--Width: $pf-global-spacer-md*3; //TODO:  probably not the right value but good enough for now
+
+$pf-c-toast__icon--success--BackgroundColor: $pf-color-green-300;
+$pf-c-toast__icon--warning--BackgroundColor: $pf-color-orange-400;
+$pf-c-toast__icon--danger--BackgroundColor: $pf-color-red-300;
+
+/// A description of pf-c-toast
+/// @group components
+/// @moduleType component
+/// @modifier .pf-c-toast--success - Changes the toast appearance to indicate success
+/// @modifier .pf-c-toast--warning - Changes the toast appearance to indicate a warning
+/// @modifier .pf-c-toast--danger - Changes the toast appearance to indicate danger
+/// @template src/components/pf-c-toast/pf-c-toast.html
+
+.pf-c-toast {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  border: $pf-global-component-border-width solid $pf-global-component-border-color;
+  //box-shadow: $pf-global-box-shadow-lg; //TODO: box shadow variable doesn't seem to work
+  //TODO: Do we even want media queries on toasts or does that come from a level up?
+  //@media (min-width: $pf-global-breakpoint-sm) {
+  //  max-width: calc(50%);
+  //}
+  //@media (min-width: $pf-global-breakpoint-md) {
+  //  max-width: calc(33.1%);
+  //}
+}
+
+.pf-c-toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: $pf-c-toast__icon--Width;
+  padding: $pf-global-spacer-sm;
+  color: $pf-global-component-inverse-color;
+  background-color: $pf-global-component-inverse-background-color;
+}
+.pf-c-toast__icon--success {
+  background-color: $pf-c-toast__icon--success--BackgroundColor;
+}
+.pf-c-toast__icon--warning {
+  background-color: $pf-c-toast__icon--warning--BackgroundColor;
+}
+.pf-c-toast__icon--danger {
+  background-color: $pf-c-toast__icon--danger--BackgroundColor;
+}
+
+.pf-c-toast__message {
+  flex-grow: 1;
+  padding: $pf-global-spacer-sm;
+}
+
+.pf-c-toast__action {
+  padding: $pf-global-spacer-sm;
+}
+
+.pf-c-toast__close {
+  padding: $pf-global-spacer-sm;
+}
+
